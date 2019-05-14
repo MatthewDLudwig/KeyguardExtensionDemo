@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name" : "Keyguard Extension Demo",
+	"version": "0.0.3",
+	"permissions": ["storage", "tabs"],
+	"browser_action": {
+		"default_popup": "pages/index.html",
+		"default_icon": {
+			"16": "images/icon16.png",
+			"32": "images/icon32.png",
+			"48": "images/icon48.png",
+			"128": "images/icon128.png"
+		}
+	},
+	"icons": {
+		"16": "images/icon16.png",
+		"32": "images/icon32.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	},
+	"content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.nimiq.com; object-src 'self'"
+}

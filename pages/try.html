@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'/>
+		<script src="https://cdn.nimiq.com/nimiq.js" defer></script>
+		<script src='../libraries/NimiqWrapper.js' defer></script>
+		<!-- I don't mind grabbing nimiq.js from the Nimiq CDN because it's a pain in the ass to do it all locally. -->
+		<!-- But for the keyguard, it's as easy as grabbing what the CDN (which isn't Nimiq's) spits out and put it in a file -->
+		<!-- I feel relatively safe giving permissions to download files from cdn.nimiq.com in the manifest, but not a general use CDN site. -->
+		<script src='../libraries/NimiqKeyguard.js' defer></script>
+		<script src='../scripts/index.js' defer></script>
+	</head>
+	<body>
+		<div id="working">
+			<button id="verify" style="margin: 30px;"> Try Verify </button>
+			<br>
+			<button id="a" style="margin: 30px;"> Choose Address </button>
+			<button id="b" style="margin: 30px;"> Sign Message </button>
+			<button id="c" style="margin: 30px;"> Send Transaction </button>
+		</div>
+		<div id="nonode" style="display: none">
+			<h2> Can't initialize Nimiq Library, is the demo open in another tab? </h2>
+		</div>
+	</body>
+</html>
